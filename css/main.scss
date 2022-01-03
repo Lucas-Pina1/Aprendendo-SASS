@@ -1,6 +1,7 @@
 @import "variables";
 @import "base";
 @import "mixins";
+@import "extends";
 
 .container {
   display: flex;
@@ -41,6 +42,21 @@
       &:hover {
         color: yellow;
       }
+    }
+
+    .success {
+      @extend %box-alert;
+      @include bg-effect(success);
+    }
+
+    .warning {
+      @extend %box-alert;
+      @include bg-effect(warning);
+    }
+
+    .danger {
+      @extend %box-alert;
+      @include bg-effect(danger);
     }
   }
 }

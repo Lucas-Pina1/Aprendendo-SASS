@@ -10,6 +10,16 @@ body {
   background-color: black;
 }
 
+.container .box .success, .container .box .warning, .container .box .danger {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  -webkit-box-shadow: 1px 1px 2px black;
+          box-shadow: 1px 1px 2px black;
+  color: white;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,5 +66,18 @@ body {
 
 .container .box a:hover {
   color: yellow;
+}
+
+.container .box .success {
+  background-color: white;
+}
+
+.container .box .warning {
+  color: black;
+  background-color: yellow;
+}
+
+.container .box .danger {
+  background-color: red;
 }
 /*# sourceMappingURL=main.css.map */
