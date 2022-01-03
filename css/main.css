@@ -69,7 +69,7 @@ body {
 }
 
 .container .box .success {
-  background-color: white;
+  background-color: green;
 }
 
 .container .box .warning {
